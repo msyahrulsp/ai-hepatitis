@@ -102,7 +102,6 @@
     )
     (assert (Classification (Name antiHBs) (Type ?antiHBs)))
     (if (and (eq ?antiHBs positive) (eq ?type positive)) then
-        (assert (Classification (Name antiHBs) (Type positive)))
         (modify ?p (Name ?name) (Prediction "Uncertain configuration"))
     )
 )
